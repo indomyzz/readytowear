@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready To Wear</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+          <div class="header-logo">
+            <a href="indext.html"><img src="images/logo (2).png" alt="" class="logo"></a>
+          </div>
+          <div class="header-list">
+            <nav class="header-list-nav">
+              <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Hooides</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div class="header-list-icon">
+              <a href=""><i class="fa fa-bag-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+     
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons"><img src="images/bar.png" id="bar"></span>
+      </button>
+      <h1 class="navbar-title"><img src="images/logo (2).png" class="logob"></h1>
+      <nav class="navbar-menu">
+        <button type="button">Skills</button>
+        <button type="button" class="active">Awards</button>
+        <button type="button">Projects</button>
+      </nav>
+    </nav>
+    <script >const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+</body>
+</html>
