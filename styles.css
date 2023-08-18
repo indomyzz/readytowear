@@ -117,6 +117,20 @@
           padding: 0 0 0 16px;
           
         }
+        .navbar-overlay {
+          display: none;
+        }
+        .navbar-burger {
+          display: none;
+        }
+        .navbar-menu {
+          position: static;
+          translate: 0 0;
+          width: auto;
+          background: transparent;
+          flex-direction: row;
+          visibility: visible;
+        }
       }
       
       .navbar-overlay {
@@ -137,11 +151,7 @@
         opacity: 1;
       }
       
-      @media only screen and (min-width: 880px) {
-        .navbar-overlay {
-          display: none;
-        }
-      }
+    
       
       .navbar-burger {
         position: absolute;
@@ -154,11 +164,7 @@
         padding: 0;
       }
       
-      @media only screen and (min-width: 880px) {
-        .navbar-burger {
-          display: none;
-        }
-      }
+     
       
       .navbar-title {
         margin: 0;
@@ -176,11 +182,13 @@
         padding: 20px;
         display: flex;
         gap: 8px;
+        color: rgb(104, 104, 104);
         flex-direction: column;
         align-items: flex-start;
-        background: #000000;
+        background: #ffffff;
         visibility: hidden;
         transition: translate 0.3s;
+       
       }
       
       body.open .navbar-menu {
@@ -188,21 +196,14 @@
         visibility: visible;
       }
       
-      @media only screen and (min-width: 880px) {
-        .navbar-menu {
-          position: static;
-          translate: 0 0;
-          width: auto;
-          background: transparent;
-          flex-direction: row;
-          visibility: visible;
-        }
-      }
+     
       
       .navbar-menu > button {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgb(104, 104, 104);
         background: transparent;
-        padding: 0 8px;
+        padding: 5px 5px;
+        font-size: 20px;
+
       }
       
       .navbar-menu > button.active {
@@ -210,3 +211,23 @@
       }
       
 
+.line{
+  border-bottom: 1px solid rgb(154, 154, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+padding: 5px;
+    margin-left: -10px;
+}
+.logomenu{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+}
+#active{
+  color : black;
+}
