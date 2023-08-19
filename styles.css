@@ -409,7 +409,7 @@ padding: 5px;
 @media only screen and (max-width:496px){
   #hero h2{
 white-space: nowrap;
-margin-top: -50px;
+margin-top: -250px;
     font-size: 35px;
   position: sticky;
   }
@@ -423,7 +423,11 @@ margin-top: -50px;
     white-space: nowrap;
     
   }
+ #myButton{
+  display: none !important;
+ }
   #hero button {
+  display: none !important;
     background-color: rgb(255, 255, 255);
   white-space: nowrap;
     width: 260px;
