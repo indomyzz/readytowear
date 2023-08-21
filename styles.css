@@ -90,7 +90,40 @@ html{
 .item-info>div:first-child {
   text-align: left;
 }
+#upcont{
+  background-color: rgb(0, 0, 0);
+position: fixed;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+ z-index: 1000;
+}
+#up{
+font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   animation-timing-function: linear; 
+height: 45px;
+animation-name: Move;
+animation-iteration-count: infinite;
+animation-duration: 9s;
+width: 100%;
+color: white;
 
+}
+@keyframes Move {
+0% {
+transform: translateX(-950px); 
+}
+
+100%{
+transform: translateX(900px);
+}
+}
 #header {
   display: flex;
   align-items: center;
@@ -104,7 +137,7 @@ html{
   left: 0;
   height: 80px;
   right: 0;
-  
+  margin-top: 30px;
 }
 
 .header-list {
@@ -345,9 +378,33 @@ white-space: nowrap;
         color: #f9f9f9;
         font-family: "Poppins";
         box-sizing: border-box;
+        margin-top: 30px;
       }
       @media only screen and (max-width: 880px){
        
+        #up{
+          font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             animation-timing-function: linear; 
+          height: 45px;
+          animation-name: Move;
+          animation-iteration-count: infinite;
+          animation-duration: 7s;
+          width: 100%;
+          color: white;
+          
+          }
+          @keyframes Move {
+          0% {
+          transform: translateX(-630px); 
+          }
+          
+          100%{
+          transform: translateX(650px);
+          }
+          }
   html{
     font-size: 55%;
  }
@@ -508,6 +565,29 @@ padding: 5px;
     background-repeat: no-repeat;
   }}
 @media only screen and (max-width:496px){
+  #up{
+    font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       animation-timing-function: linear; 
+    height: 45px;
+    animation-name: Move;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    width: 100%;
+    color: white;
+    
+    }
+    @keyframes Move {
+    0% {
+    transform: translateX(-400px); 
+    }
+    
+    100%{
+    transform: translateX(450px);
+    }
+    }
   html{
     font-size: 50%;
  }
