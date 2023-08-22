@@ -8,13 +8,14 @@
   z-index: 1000;
   display: none;
 }
+
 .close{
-  position: absolut;
+  position: absolute;
   top: 20px;
   right :20px;
   width: 40px;
   height: 40px;
-  background: rgb(216, 216, 216)  url(images/closes.png);
+  background: rgb(0, 0, 0)  url(images/sclose.png);
 background-repeat: no-repeat;
 background-size: 30px;
 background-position: center;
@@ -24,9 +25,10 @@ border-radius: 20px;
 }
 .contentbox{
   position: relative;
+ 
   width: 600px;
   height: 400px;
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   display: flex;
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
@@ -34,22 +36,27 @@ border-radius: 20px;
 .contentbox .content h3{
 font-size: 3em;
 font-weight: 300;
+color: white;
 line-height: 1em;
 }
 .contentbox .content h2{
   font-size: 6em;
+  color: white;
+
   color: red;
   line-height: 1em;
   }
+ 
   .contentbox .content p{
    font-weight: 700;
+   color: white;
     }
     .contentbox .content a{
       display: inline-block;
       padding: 10px 30px;
-      color: white;
+      color: rgb(0, 0, 0);
       margin-top: 15px;
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
       border-radius: 15px;
        }
   .contentbox .content h2 span{
