@@ -10,6 +10,24 @@
     <title>Ready To Wear</title>
 </head>
 <body>
+  <div class="popup">
+<div class="contentbox">
+  <div class="close"></div>
+<div class="imgbox">
+  <img src="images/DSCNT-removebg-preview.png">
+</div>
+<div class="content">
+ <div>
+  <h3>SPECIAL OFFER</h3>
+  <h2>10 <sup>%</sup> <span>OFF</span></h2>
+  <p>ReadyToWear Is Offering A 10 % Off Discount For Everyone Who Follow Our Instagram.</p>
+  <a href="">ACCEPT </a>
+</div>
+</div>
+</div>
+
+  </div>
+  
   <div id="upcont">
     <p id="up"> UNLOCK 10% OFF YOUR ORDER</p> 
 </div>
@@ -48,8 +66,8 @@
         <img src="images/logo.png" class="logomenu">
         <button type="button" id="active">HOME</button>
         <p class="line"></p>
-       <a href="shop.html">
-        <button type="button" class="active">SHOP</button></a>
+       
+        <button type="button" class="active">SHOP</button>
         <p class="line"></p>
         <button type="button">ABOUT US</button>
         <p class="line"></p>
@@ -67,43 +85,43 @@
   
 <div class="container">
 
-  <h3 class="title"> READY<span style="color: red;">TO</span>WEAR  </h3>
+  <h3 class="title"> TREN<span style="color: red;">DING</span></h3>
  
   <p class="title2">Anime Collection</p>
   <div class="products-container">
 
      <div class="product" data-name="p-1">
-        <img src="images/photo_2023-08-20_16-40-21.jpg" alt="">
+        <img src="images/chainner_photo_2023-08-20_16-40-21-removebg-preview.png" alt="">
         <h3>Gear5 “ Joy Boy “ The king of pirates </h3>
         <div class="price">$6.00</div>
      </div>
 
      <div class="product" data-name="p-2">
-        <img src="images/photo_2023-08-20_16-39-16.jpg" alt="">
+        <img src="images/ik2.png" alt="">
         <h3>Gear5 “ Joy Boy “ The king of pirates </h3>
         <div class="price">$2.00</div>
      </div>
 
      <div class="product" data-name="p-3">
-        <a href="shop.html"><img src="images/photo_2023-08-20_16-39-43.jpg" alt="">
+        <a href="shop.html"><img src="images/lufy.png" alt="">
         <h3>tee3</h3>
         <div class="price">$2.00</div></a>
      </div>
 
      <div class="product" data-name="p-4">
-        <img src="images/photo_2023-08-20_16-39-55.jpg" alt="">
+        <img src="images/sav.png" alt="">
         <h3>tee4</h3>
         <div class="price">$2.00</div>
      </div>
 
      <div class="product" data-name="p-5">
-        <img src="images/photo_2023-08-20_16-40-00.jpg" alt="">
+        <img src="images/boy.jpg" alt="">
         <h3>tee5</h3>
         <div class="price">$2.00</div>
      </div>
 
      <div class="product" data-name="p-6">
-        <img src="images/photo_2023-08-20_16-40-25.jpg" alt="">
+        <img src="images/dragon-removebg-preview.png" alt="">
         <h3>tee6</h3>
         <div class="price">$2.00</div>
      </div>
@@ -113,6 +131,25 @@
 </div>
 
     <script >
+     const popup = document.querySelector(".popup");
+      const close = document.querySelector(".close");
+
+
+
+     window.onload = function(){
+setTimeout(function(){ 
+  popup.style.display = "block";
+
+}, 10000)
+     }
+     document.addEventListener("DOMContentLoaded", () => {
+  
+
+     close.addEventListener("click", () => {
+      popup.style.display = "none";
+     })
+  });   
+     
      const button = document.getElementById('myButton');
 
 button.addEventListener('mouseenter', () => {
