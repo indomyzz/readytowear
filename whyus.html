@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="whyus.css">
+  <link rel="stylesheet" href="shop.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READYTOWEAR - SHOP</title>
+    <link rel="stylesheet" href="glider.min.css">
+</head>
+<body>
+   
+  <div id="upcont">
+    
+    <p id="up"> FREE SHIPPING FOR ALL ORDERS OVER 60$ IN MOROCCO</p> 
+</div>
+
+
+  <header>
+        <div id="header">
+          <div class="header-logo">
+            <a href="indext.html"><img src="images/0819-33-removebg-preview.png" alt="" class="logo"></a>
+          </div>
+          <div class="header-list">
+            <nav class="header-list-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active" >Shop</a></li>
+                <li><a href="blog.html">Hooides</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div class="header-list-icon">
+              <a href=""><i class="fa fa-bag-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons"><img src="images/bar.png" id="bar"></span>
+      </button>
+      <h1 class="navbar-title"><img src="images/0819-33-removebg-preview.png" class="logob"></h1>
+
+      <nav class="navbar-menu">
+        <img src="images/0819-33-removebg-preview.png" class="logomenu">
+        <a href="index.html">
+        <button type="button" class="shopgo" >HOME</button></a>
+        <p class="line"></p>
+       <a href="shop.html">
+        <button type="button" class="shopgo">SHOP</button></a>
+        <p class="line"></p>
+        <button type="button" id="active">WHY CHOOSE US?</button>
+        <p class="line"></p>
+      </nav>
+    </nav>
+  
+  <p class="title">WHY CHOOSE US?</p>
+
+<p class="title3">Captivating Anime Aesthetics:</p>
+  <p class="title4">
+    Immerse yourself in the captivating world of anime through our thoughtfully curated designs. From iconic characters to breathtaking landscapes, our apparel captures the essence of your favorite anime moments, allowing you to wear your passion with pride.
+  </p>
+  <p class="title3">Premium Quality:</p>
+
+<p class="title4">
+    We believe that true art deserves the finest canvas. That's why we source only the highest quality materials for our t-shirts. Our commitment to excellence means you're not just getting a t-shirt, you're getting a wearable masterpiece that's built to last.
+</p>
+<p class="title3">Uniquely Expressive:</p>
+
+
+<p class="title4">
+    Your style is a reflection of your individuality, and our designs allow you to express yourself uniquely. Whether you're at a convention, hanging out with friends, or exploring the streets, our apparel is designed to make a statement and spark conversations.
+</p>
+<p class="title3">Passion-Driven:</p>
+<p class="title4">
+    We're not just in the business of clothing; we're driven by a deep passion for anime and creativity. This passion shines through in every design we create and every t-shirt we produce, making your connection with our brand truly authentic.
+</p>
+<script src="glider.min.js">
+
+</script>
+
+<script>
+  new Glider(document.querySelector('.glider'), {
+  slidesToShow:3.5,
+  slidesToScroll: 5,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 1200,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 3.5,
+        slidesToScroll: 2,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 304,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       
+      }
+    }
+  
+  
+  
+  ]
+
+});
+
+
+
+
+new Glider(document.querySelector('.glider2'), {
+  slidesToShow:4,
+  slidesToScroll: 5,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 1200,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 3.5,
+        slidesToScroll: 2,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 304,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+       
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       
+      }
+    }
+  
+  
+  
+  ]
+
+});
+</script>
+<script>
+  
+    
+  const toggleMenuOpen = () => document.body.classList.toggle("open");
+</script>
+</body>
+</html>
